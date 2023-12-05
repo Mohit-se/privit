@@ -1,0 +1,276 @@
+=================================Old Models Login registration and otp============================================
+
+
+
+
+<!-- logSin-modal-start -->
+
+<!-- <div class="modal fade logSin-modal" id="log_sin_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-md ">
+
+    <div class="modal-content">
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+      <div class="modal-body">
+
+        <div id="log_modal" style="display:none">
+
+            <div class="section-heading">
+
+                <h2>login</h2>
+
+            </div>
+
+            <div class="social-account">
+
+                <a href="">
+
+                    <img src="assets/image/goole.svg" class="img-fluid" />
+
+                    Gmail
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/face-book.svg" class="img-fluid" />
+
+                    Facebook
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/in-sta.svg" class="img-fluid" />
+
+                    instagram
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/twi-tter.svg" class="img-fluid" />
+
+                    Twitter
+
+                </a>
+
+            </div>
+
+            <div class="or-box">
+
+                <span>or</span>
+
+            </div>
+
+            <form>
+
+                <div class="logSin-form">
+
+                    <p class="text-center">Please enter your login details</p>
+
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" name="_email" placeholder="Email Address...">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" name="_password" placeholder="Password">
+
+                    </div>
+
+                    <div class="check-field">
+
+                        <div class="form-check">
+
+                          <input class="form-check-input" type="checkbox">
+
+                          <label class="form-check-label">Remember Me</label>
+
+                        </div>
+
+                        <a href="" class="read-more">Recovery Now?</a>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <button class="form-control btn-all" type="submit">login</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="create-account">
+
+                <p>No Account?</p>
+
+                <a href="" class="read-more">Create one</a>
+
+            </div>
+
+        </div>
+
+        <div id="sin_modal" style="display:none">
+
+            <div class="section-heading">
+
+                <h2>Create an account</h2>
+
+            </div>
+
+            <div class="social-account">
+
+                <a href="">
+
+                    <img src="assets/image/goole.svg" class="img-fluid" />
+
+                    Gmail
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/face-book.svg" class="img-fluid" />
+
+                    Facebook
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/in-sta.svg" class="img-fluid" />
+
+                    instagram
+
+                </a>
+
+                <a href="">
+
+                    <img src="assets/image/twi-tter.svg" class="img-fluid" />
+
+                    Twitter
+
+                </a>
+
+            </div>
+
+            <div class="or-box">
+
+                <span>or</span>
+
+            </div>
+
+            <form id="userRegistration">
+
+                <div class="logSin-form">
+
+                    <p class="text-center">Please enter your personal details</p>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" name="address" id="address" placeholder="Address">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" name="number" id="number" placeholder="Number">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <button type="submit" class="form-control btn-all" >Registration</button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="create-account">
+
+                <p>Already have an a account</p>
+
+                <a href="" class="read-more">Login</a>
+
+            </div>
+
+        </div>
+
+        <div id="otp_modal" style="display:none">
+
+             <div class="section-heading">
+
+                <h2>OTP Verification</h2>
+
+            </div> 
+
+            <form>
+
+                <div class="logSin-form">
+
+                    <p >Please enter the 4 digit verification
+
+                         code sent to <span>1234 567890</span></p>
+
+                    <div class="form-group otp-form">
+
+                        <input type="number" class="form-control" name="_number1">
+
+                        <input type="number" class="form-control" name="_number2">
+
+                        <input type="number" class="form-control" name="_number3">
+
+                        <input type="number" class="form-control" name="_number4">
+
+                    </div>
+
+                    <div class="check-field">
+
+                        <p>If you don’t have receive any OTP</p>
+
+                        <a href="" class="read-more">Recovery Now?</a>
+
+                    </div>
+
+                    <p class="text-center mt-4">OTP will sent in <span>30sec</span></p>
+
+                    <div class="form-group">
+
+                        <a href="personal-info.php"  class=" btn-all">continue</a>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>  
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->

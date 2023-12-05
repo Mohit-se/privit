@@ -1,0 +1,229 @@
+@media screen and (min-width: 1900px){
+
+}
+@media screen and (min-width: 1600px){
+
+}
+@media screen and (max-width: 1400px){
+	.personal-info {
+		height: auto;
+		padding: 20px 10px 100px 10px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+
+}
+@media (min-width: 992px) and (max-width: 1399px){
+    
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.navbar-brand {
+		margin-right: 30px;
+	}
+	header ul.navbar-nav {
+		gap: 10px;
+	}
+}
+@media (max-width: 991px){    
+	header div#collapsibleNavbar {
+	    order: 3;
+	    transition: .5s all;
+	}
+	header ul.navbar-nav {
+	    position: fixed;
+	    width: 80%;
+	    background-color: var(--color-white);
+	    z-index: 99;
+	    height: 100vh;
+	    top: 100px;
+	    left: 0;
+	    padding: 10px 50px 50px 70px;
+	    border-right: 1px solid #00000010;
+	    transform: translateX(-100%);
+	    gap: 20px;
+	    transition: .5s all;
+	}
+	header div#collapsibleNavbar.show ul.navbar-nav{
+		transform: translateX(0%);
+		transition: .5s al;
+	}
+	header a.nav-link {
+	    font-size: 20px;
+	}
+	header{
+        height: 100px;
+        border-bottom: 1px solid #00000010;
+    }
+    .navbar-brand {
+        width: 90px;
+        height: 90px;
+    }
+    header .d-hide{
+        display: flex;
+    }
+    header .m-hide{
+        display: none;
+    }
+    .hero h4.banner-heading {
+	    font-size: 22px;
+	}
+	h1.main-heading {
+	    font-size: 30px;
+	    line-height: 40px;
+	    margin-bottom: 15px;
+	}
+	.hero {
+	    height: 550px;
+	    background-size: cover;
+	    padding:10px;
+	}
+	.reason-choose .section-heading, .time-eat .section-heading, .choose-plan .section-heading, .blog .section-heading {
+	    width: 100%;
+	    margin: 0 auto 30px auto;
+	}
+	.section-heading h2 {
+	    font-size: 27px;
+	    margin-bottom: 15px;
+	}
+	.reason-choose-img {
+		height: 400px;
+	}
+	.time-eat, .reason-choose, .product-item-box, .choose-plan{
+	    padding: 50px 10px;
+	}
+	.blog {
+		padding: 0px 10px 50px 10px;
+	}
+	#choose_reason_one {
+	    padding-top: 0;
+	}	
+	.reason-box, .reason-box-second {
+	    text-align: center;
+	}
+	.reason-box .reason-box-img, .reason-box-second .reason-box-img {
+	    margin: 0 auto 15px auto;
+	}
+	.product-image {
+	    height: 300px;
+	}
+	.plan-content h3 {
+	    font-size: 45px;
+	    margin-bottom: 10px;
+	}
+	.plan-content p {
+	    width: 100%;
+	}	
+	.top-footer, .mid-footer {
+	    padding: 30px 0px;
+	}
+	.bottom-footer{
+		padding: 10px 0px;
+	}
+	.personal-detail .personal-info-deatil {
+	    grid-template-columns: repeat(2, 1fr);
+	}
+	.personal-info:after {
+	    width: 280px;
+	    height: 250px;
+	}
+	.modal-body .section-heading h2 {
+		font-size: 25px;
+	}
+	.modal-content button.btn-close {
+		width: 20px;
+		height: 20px;
+		font-size: 15px;
+		top: 5px;
+		right: 5px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .choose-plan:after {
+	    width: 200px;
+	    height: 200px;
+	    top: -100px;
+	    right: 30px;
+	}
+	.choose-plan {
+	    margin-top: 50px;
+	}
+	.personal-info:before {
+	    width: 120px;
+	    height: 200px;
+	    top: 180px;
+	}
+}
+@media (max-width: 767px) {
+    header ul.navbar-nav {
+	    padding: 10px 50px 50px 25px;
+	}
+	.product-item-box .section-heading {
+	    text-align: center;
+	}
+	.product-item-box .custom-row {
+	    flex-direction: column-reverse;
+	}
+	.choose-plan:after {
+	    width: 150px;
+	    height: 150px;
+	    top: -80px;
+	    right: 15px;
+	}
+	.choose-plan {
+	    margin-top: 25px;
+	}
+	.plan-content {
+	    padding: 30px;
+	}
+	footer{
+		padding: 0px 10px;
+	}
+	.mid-footer .app-box {
+	    padding: 10px;
+	}
+	.top-footer .top-footer-content {
+	    flex-wrap: wrap;
+	}
+	button.scroll-btn {
+	    bottom: 0rem;
+	    right: 1rem;
+	    width: 40px;
+	    height: 40px;
+	}
+	.personal-detail .personal-info-deatil {
+	    grid-template-columns: repeat(1, 1fr);
+	}
+	.personal-info .p-box:after {
+	    width: 100px;
+	    height: 100px;
+	    right: -20px;
+	    top: -40px;
+	}
+	.personal-info .section-heading p {
+	    width: 100%;
+	}
+	.personal-info .personal-info-header .btn-box {
+	    position: unset;
+	}
+	.personal-info .personal-info-header {
+	    text-align: inherit;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+	.personal-info:before {
+	    width: 80px;
+	    height: 150px;
+	    top: 250px;
+	}
+	.back-btn {
+	    width: 30px;
+	    height: 30px;
+	}
+	.personal-info .section-heading .back-btn i {
+	    font-size: 15px;
+	}
+	.personal-info .section-heading .back-btn {
+	    top: -30px;
+	}
+}

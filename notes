@@ -1,0 +1,25 @@
+//=============Folder create command========================//
+npx express-generator
+
+
+
+//============Install Nodemon================================//
+Command run:- npm install nodemon --save-dev
+
+
+//=======Create config file and migrations folder and seeders folder=====================//
+command run:- npx sequelize-cli init
+
+//============Create Migration file===========================//
+npx sequelize-cli model:generate --name Users --attributes name:string,email:string,Address:string,number:string,password:string,api_token:text
+
+//============Migrate all migration folder====================//
+command run:- npx sequelize-cli db:migrate
+
+
+
+
+//=======Create and check password "Bcrypt"======================//
+
+Command run:- npm install bcrypt
+import :- const bcrypt = require("bcrypt")
