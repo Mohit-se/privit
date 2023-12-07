@@ -9,6 +9,8 @@ router.post('/registration', homeController.registrations);
 
 router.post("/login",homeController.login);
 
-router.get("/personal-info", homeController.personalInfo)
+router.get("/personal-info", homeController.personalInfo);
+
+router.get('/about-us',homeController.aboutUs);
 
 module.exports = router;

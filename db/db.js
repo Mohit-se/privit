@@ -18,6 +18,10 @@ db.sequelize = sequelize;
 
 //Models Ko import karte hai fir uske baad sync karte hai..
 db.users = require('../models/users')(sequelize, DataTypes);
+db.allergies = require('../models/allergies')(sequelize, DataTypes);
+db.diets = require('../models/diets')(sequelize, DataTypes);
+db.medicalconditions = require('../models/medicalconditions')(sequelize, DataTypes);
+db.cuisinetype = require('../models/cuisinetype')(sequelize, DataTypes);
 module.exports = db;
 
 db.sequelize.sync({ force: false }).then(() => {

@@ -2,21 +2,37 @@ const { Sequelize } = require('sequelize');
 const db = require('../db/db');
 const bcrypt = require("bcrypt");
 const Users = db.users;
+const Allergies = db.allergies;
+const Diets = db.diets;
+const MedicalConditions = db.medicalconditions;
+const CuisineType = db.cuisinetype;
+
 
 module.exports = {
 
     //Dashboard
     index: async (req, res) => {
-        res.render("index")
+        res.render("index");
+    },
+
+    //About Us
+    aboutUs: async (req, res) => {
+        res.render("about-us");
     },
 
    //======================================Start Personal Info Page===================================================================//
 
    personalInfo: async (req, res) => {
-        res.render("personal-info")
+        var getAllergies  = await Allergies.findAll();
+        var getDiets = await Diets.findAll();
+        var getMedicalConditions = await MedicalConditions.findAll();
+        var getCuisineType = await CuisineType.findAll();
+
+        res.render("personal-info",{getAllergies:getAllergies, getDiets:getDiets,getMedicalConditions:getMedicalConditions, getCuisineType:getCuisineType});
    },
 
    //======================================End Personal Info Page===================================================================//
+
     
   //=======================================Start Registration form new entries========================================================//
     registrations: async (req, res) => {

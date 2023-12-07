@@ -17,7 +17,7 @@
 <section class="personal-info" id="personal_id">
 
     <div class="container">
-
+      <form id="personalInfo">
         <div class="row">
 
             <div class="col-12 col-md-12 col-lg-10 mx-auto">
@@ -62,7 +62,9 @@
 
                                 <p>Gender</p>
 
-                                <h6 class="info-heading">male</h6>
+                                <h6 class="info-heading chose-gender">male</h6>
+
+                                <input type="hidden" name="gender" id="gender" value=""/>
 
                             </div>
 
@@ -76,7 +78,9 @@
 
                                 <p>blood group</p>
 
-                                <h6 class="info-heading">a</h6>
+                                <h6 class="info-heading Chose-BloodGr">a</h6>
+
+                                <input type="hidden" name="gender" value=""/>
 
                             </div>
 
@@ -91,6 +95,8 @@
                                 <p>age</p>
 
                                 <h6 class="info-heading">26 years</h6>
+
+                                <input type="hidden" name="age" id="age" value=""/>
 
                             </div>
 
@@ -108,6 +114,8 @@
 
                                 <h6 class="info-heading">122 cm</h6>
 
+                                <input type="hidden" name="height" id="height" value=""/>
+
                             </div>
 
                             <a href="" class="change-btn" data-bs-toggle="modal" data-bs-target="#your_height">change</a>
@@ -122,6 +130,8 @@
 
                                 <h6 class="info-heading">68kg</h6>
 
+                                <input type="hidden" name="weight" id="weight" value=""/>
+
                             </div>
 
                             <a href="" class="change-btn" class="change-btn" data-bs-toggle="modal" data-bs-target="#your_weight">change</a>
@@ -134,7 +144,9 @@
 
                                 <p>Allergies</p>
 
-                                <h6 class="info-heading">Celery free</h6>
+                                <h6 class="info-heading chose-allergies">Celery free</h6>
+
+                                <input type="hidden" name="allergies" id="allergies" value=""/>
 
                             </div>
 
@@ -148,7 +160,9 @@
 
                                 <p>Diet Type</p>
 
-                                <h6 class="info-heading">Alcohol free</h6>
+                                <h6 class="info-heading chose-diet">Alcohol free</h6>
+
+                                <input type="hidden" name="diet_type" id="diet_type" value=""/>
 
                             </div>
 
@@ -162,7 +176,9 @@
 
                                 <p>Medical Conditions</p>
 
-                                <h6 class="info-heading">Diabetes</h6>
+                                <h6 class="info-heading chose-medical">Diabetes</h6>
+
+                                <input type="hidden" name="medical_conditions" id="medical_conditions" value=""/>
 
                             </div>
 
@@ -178,6 +194,8 @@
 
                                 <h6 class="info-heading">Moderately Active</h6>
 
+                                <input type="hidden" name="active_state" id="active_state" value=""/>
+
                             </div>
 
                             <a href="" class="change-btn">change</a>
@@ -192,6 +210,8 @@
 
                                 <h6 class="info-heading">Mesomorph (Aesthetic)</h6>
 
+                                <input type="hidden" name="goal" id="goal" value=""/>
+
                             </div>
 
                             <a href="" class="change-btn">change</a>
@@ -204,7 +224,9 @@
 
                                 <p>Cuisine type</p>
 
-                                <h6 class="info-heading">indian</h6>
+                                <h6 class="info-heading chose-cuisine">indian</h6>
+
+                                <input type="hidden" name="cuisine_type" id="cuisine_type" value=""/>
 
                             </div>
 
@@ -219,6 +241,8 @@
                                 <p>Address</p>
 
                                 <h6 class="info-heading">90 Woerdens Road...</h6>
+
+                                <input type="hidden" name="address" id="address" value=""/>
 
                             </div>
 
@@ -243,13 +267,1017 @@
             </div>
 
         </div>
-
+      </form>
     </div>
 
 </section>
+
+
+
+
+<!-- personal-info-modal-start -->
+
+
+
+<!-- gender-modal-start -->
+
+<div class="modal fade personal_info_modal" id="gen_der" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>gender</h2>
+
+                  <p>pick the data that is accurate for you.</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" id="radio1" name="gender" value="male"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                             <img src="assets/image/male.svg" class="img-fluid" />                                  
+
+                                  <p>male</p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" id="radio2" name="gender" value="diverse"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                             <img src="assets/image/diverse.svg" class="img-fluid" />                                  
+
+                                  <p>diverse</p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" id="radio3" name="gender" value="female"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                             <img src="assets/image/female.svg" class="img-fluid" />                                  
+
+                                  <p>female</p>
+
+                          </div>
+
+                          </div>
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all genderModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- gender-modal-end -->
+
+
+
+<!-- blood-group-modal-start -->
+
+  <div class="modal fade personal_info_modal" id="blood_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>Blood Group</h2>
+
+                  <p>pick the data that is accurate for you.</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input"  name="BloodGr" value="a+"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                             <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>A<sup>+</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input"  name="BloodGr" value="b+"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                             <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>b<sup>+</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input"  name="BloodGr" value="ab+" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>ab<sup>+</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input"  name="BloodGr" value="o+"  aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>o<sup>+</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" name="BloodGr" value="a-" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>a<sup>-</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input"  name="BloodGr" value="b-" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>b<sup>-</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" name="BloodGr" value="ab-" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>ab<sup>-</sup></p>
+
+                          </div>
+
+                          </div>
+
+                          <div class="form-check">
+
+                            <input type="radio" class="form-check-input" name="BloodGr" value="o-" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                            <img src="assets/image/drops.svg" class="img-fluid" />         
+
+                             <p>0<sup>-</sup></p>
+
+                          </div>
+
+                          </div>
+
+
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all bloodGroupModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- blood-group-modal-end -->
+
+
+
+<!-- Allergies-modal-start -->
+
+  <div class="modal fade personal_info_modal" id="aller_gies" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>Allergies</h2>
+
+                  <p>do you have any of this common allergies?</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+                        <% getAllergies.forEach(function(item){ %>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="<%= item.name %>" allergies-id="<%= item.id %>"  aria-expanded="true">
+                            <div class="abso-box">
+                            
+                              <% if(item.image) { %>
+                                <img src="<%= item.image %>" class="img-fluid" />      
+                               <% }%>        
+                        
+                              <p><%= item.name %></p>
+                            </div>
+                          </div>
+                        <% }); %>
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all allergiesModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- Allergies-modal-end -->
+
+
+
+<!-- diet-modal-start -->
+
+<div class="modal fade personal_info_modal" id="di_et" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>diet</h2>
+
+                  <p>choose your diet</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+                       
+                        <% getDiets.forEach(function(item){ %>
+                          <div class="form-check">
+
+                                <input class="form-check-input" type="checkbox" value="<%= item.name %>" diet-id="<%= item.id %>"  aria-expanded="true">
+
+                             <div class="abso-box">
+ 
+                               <% if(item.image) { %>
+                                <img src="<%= item.image %>" class="img-fluid" />      
+                               <% }%>        
+
+                               <p><%= item.name%></p>
+
+                             </div>
+
+                          </div>
+                        <% }); %>
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all dietModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- diet-modal-end -->
+
+
+
+<!-- medical-condition-modal-start -->
+
+<div class="modal fade personal_info_modal" id="medical_condition" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>medical conditions</h2>
+
+                  <p>do you have any medical conditions we should aware of?</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+              
+                        <% getMedicalConditions.forEach(function(item){ %>
+                          <div class="form-check">
+
+                             <input class="form-check-input" type="checkbox" name="medical" value="<%= item.name %>" medical-id="<%= item.id %>" aria-expanded="true">
+
+                             <div class="abso-box">
+
+                               <% if(item.image) { %>
+                                <img src="<%= item.image %>" class="img-fluid" />      
+                               <% }%>      
+
+                                <p><%= item.name %></p>
+
+                             </div>
+
+                          </div>
+
+                          <%});%>
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all medicalModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+<!-- medical-condition-modal-end -->
+
+
+
+<!-- cuisine-modal-end -->
+
+<div class="modal fade personal_info_modal" id="cui_sine" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>Cuisine type</h2>
+
+                  <p>please choose one</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="radio-field">
+
+                        <% getCuisineType.forEach(function(item){ %>
+                          <div class="form-check">
+
+                          <input class="form-check-input" type="checkbox" value="<%= item.name %>" aria-expanded="true">
+
+                             <div class="abso-box">                                        
+
+                             <p><%= item.name %></p>
+
+                          </div>
+
+                          </div>
+                          <%});%>
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all cuisineModal" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+<!-- cuisine-modal-end -->
+
+
+
+<!-- your-age-modal-start -->
+
+<div class="modal fade personal_info_modal" id="your_age" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>Your age</h2>
+
+                  <p>pick the data that is accurate for you.</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                <div class="range-item">
+
+                      <ul class="list-inline list-unstyled">
+
+                        <li class="list-inline-item">
+
+                          <span>24</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>25</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>26</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>27</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>28</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>29</span>
+
+                        </li>
+
+                        <li class="list-inline-item">
+
+                          <span>30</span>
+
+                        </li>
+
+                      </ul>
+
+                      <div class="range-input d-flex position-relative">
+
+                        <input type="range" min="0" max="30" class="form-range" name="dataShared" value="27" step="1" />
+
+                        <div class="range-line">
+
+                          <span class="active-line"></span>
+
+                        </div>
+
+                      </div>                        
+
+                </div>               
+
+
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- your-age-modal-end -->
+
+<!-- your-height-modal-start -->
+
+<div class="modal fade personal_info_modal" id="your_height" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-md ">
+
+    <div class="modal-content">
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+            <div class="section-heading">
+
+                <h2>Your Height</h2>
+
+                <p>pick the data that is accurate for you.</p>
+
+            </div>
+
+            <form>
+
+                <div class="logSin-form">
+
+                    <div class="in-de">
+
+                        <div class="list-box">
+
+                            <span class="head-red">Metric</span>
+
+                            <ul class="form-list">                                
+
+                                <li><p>123</p></li>
+
+                                <li><p>122</p></li>
+
+                                <li><p>124</p></li>                               
+
+                            </ul>
+
+                            <span class="head-red">cm</span>
+
+                        </div>
+
+                        
+
+                        <div class="btn-box">
+
+                            <span class="in-de-btn">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="29" viewBox="0 0 23 29" fill="none">
+
+                                  <path d="M8.97583 12.1453H2.17092C0.722253 12.1453 0.490341 11.4321 1.5276 10.417L11.9446 0L22.3585 10.4154C23.3957 11.4289 23.1654 12.1453 21.7199 12.1453H14.9134L14.9119 25.3659C14.9116 26.1533 14.5987 26.9083 14.0417 27.4649C13.4848 28.0216 12.7296 28.3341 11.9423 28.3339C11.1549 28.3337 10.3998 28.0207 9.84322 27.4638C9.28661 26.9069 8.97403 26.1517 8.97424 25.3643L8.97583 12.1453Z" fill="#6E7984"/>
+
+                              </svg>
+
+                          </span>
+
+                          <span class=" in-de-btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="29" viewBox="0 0 23 29" fill="none">
+
+                                <path d="M14.9096 16.8483H21.7145C23.1632 16.8483 23.3951 17.5615 22.3578 18.5765L11.9408 28.9935L1.52694 18.5781C0.489685 17.5647 0.720012 16.8483 2.1655 16.8483H8.972L8.97358 3.6292C8.97358 2.84183 9.28637 2.08671 9.84313 1.52995C10.3999 0.973188 11.155 0.6604 11.9424 0.6604C12.7298 0.6604 13.4849 0.973188 14.0417 1.52995C14.5984 2.08671 14.9112 2.84183 14.9112 3.6292L14.9096 16.8483Z" fill="#6E7984"/>
+
+                            </svg>
+
+                        </span>
+
+                    </div>
+
+                    <div class="list-box">
+
+                        <span class="head-red">Imperial</span>
+
+                        <ul class="form-list">                                
+
+                            <li><p>6'.5"</p></li>
+
+                            <li ><p>6'.5"</p></li>
+
+                            <li><p>5'.9"</p></li>                                
+
+                        </ul>
+
+                        <span class="head-red">ft In</span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <button class="form-control btn-all" type="submit">done</button>
+
+                </div>
+
+            </div>
+
+        </form>       
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- your-height-modal-end-->
+
+<!-- your-weight-modal-start -->
+
+<div class="modal fade personal_info_modal" id="your_weight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-md ">
+
+    <div class="modal-content">
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+            <div class="section-heading">
+
+                <h2>Your Weight</h2>
+
+                <p>Calculated weight (kg)</p>
+
+            </div>
+
+            <form>
+
+                <div class="logSin-form">
+
+                    <div class="in-de">
+
+                        <div class="list-box">
+
+                            <span class="head-red">Metric</span>
+
+                            <ul class="form-list">                                
+
+                                <li><p>123</p></li>
+
+                                <li><p>122</p></li>
+
+                                <li><p>124</p></li>                               
+
+                            </ul>
+
+                            <span class="head-red">kg</span>
+
+                        </div>
+
+                        
+
+                        <div class="btn-box">
+
+                            <span class="in-de-btn">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="29" viewBox="0 0 23 29" fill="none">
+
+                                  <path d="M8.97583 12.1453H2.17092C0.722253 12.1453 0.490341 11.4321 1.5276 10.417L11.9446 0L22.3585 10.4154C23.3957 11.4289 23.1654 12.1453 21.7199 12.1453H14.9134L14.9119 25.3659C14.9116 26.1533 14.5987 26.9083 14.0417 27.4649C13.4848 28.0216 12.7296 28.3341 11.9423 28.3339C11.1549 28.3337 10.3998 28.0207 9.84322 27.4638C9.28661 26.9069 8.97403 26.1517 8.97424 25.3643L8.97583 12.1453Z" fill="#6E7984"/>
+
+                              </svg>
+
+                          </span>
+
+                          <span class=" in-de-btn">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="29" viewBox="0 0 23 29" fill="none">
+
+                                <path d="M14.9096 16.8483H21.7145C23.1632 16.8483 23.3951 17.5615 22.3578 18.5765L11.9408 28.9935L1.52694 18.5781C0.489685 17.5647 0.720012 16.8483 2.1655 16.8483H8.972L8.97358 3.6292C8.97358 2.84183 9.28637 2.08671 9.84313 1.52995C10.3999 0.973188 11.155 0.6604 11.9424 0.6604C12.7298 0.6604 13.4849 0.973188 14.0417 1.52995C14.5984 2.08671 14.9112 2.84183 14.9112 3.6292L14.9096 16.8483Z" fill="#6E7984"/>
+
+                            </svg>
+
+                        </span>
+
+                    </div>
+
+                    <div class="list-box">
+
+                        <span class="head-red">Imperial</span>
+
+                        <ul class="form-list">                                
+
+                            <li><p>123</p></li>
+
+                            <li><p>122</p></li>
+
+                            <li><p>124</p></li>                               
+
+                        </ul>
+
+                        <span class="head-red">Ib</span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <button class="form-control btn-all" type="submit">done</button>
+
+                </div>
+
+            </div>
+
+        </form>       
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- your-weight-modal-end-->
+
+
+
+<!-- cuisine-modal-end -->
+
+<div class="modal fade personal_info_modal" id="your_height" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-md ">
+
+      <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-sharp fa-light fa-xmark"></i></button>
+
+        <div class="modal-body">
+
+              <div class="section-heading">
+
+                  <h2>Your Height</h2>
+
+                  <p>pick the data that is accurate for you.</p>
+
+              </div>
+
+              <form>
+
+                  <div class="logSin-form">
+
+                      <div class="in-de">
+
+                          
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <button class="form-control btn-all" type="submit">done</button>
+
+                      </div>
+
+                  </div>
+
+              </form>       
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- cuisine-modal-end -->
+
+
+
+<!--personal-info-modal-end -->
 
 
 <!-- footer-start -->
 <%- include("comman/footer") %>
 <!-- footer-end -->
 
+<script>
+  $(document).ready(function(){
+
+    //===============================Personal information Models===========================================//
+
+      //**************Gender Modal***************//
+      $(".genderModal").on("click",function(event){
+          event.preventDefault();
+          var getGender = $("input[name='gender']:checked").val();//get value
+          $(".chose-gender").html(getGender); // append html choose value.
+          $('#gen_der').modal('hide'); //Modal hide after choose gender.
+
+      });
+
+      //**************Blood Group Modal***************//
+      $(".bloodGroupModal").on("click",function(event){
+        event.preventDefault();
+        var getBloodGrp = $("input[name='BloodGr']:checked").val();//get value
+        $(".Chose-BloodGr").html(getBloodGrp);
+        $("#blood_group").modal('hide');
+      })
+
+      //**************Allergies Modal***************//
+      $(".allergiesModal").on("click",function(event){
+        event.preventDefault();
+        var allergiesIds = [];
+        var allergies = [];
+        $("input[type='checkbox']:checked").each(function(){
+              allergiesIds.push($(this).attr('allergies-id'));
+              allergies.push($(this).val());
+        });
+        var array = allergies.toString();
+        $(".chose-allergies").html(array)
+        $("#aller_gies").modal('hide');
+       
+      });
+
+      //**************Diets Modal***************//
+      $(".dietModal").on("click",function(event){
+        event.preventDefault();
+        var dietsIds = [];
+        var diets = [];
+        $("input[type='checkbox']:checked").each(function(){
+          dietsIds.push($(this).attr('diet-id'));
+          diets.push($(this).val());
+        });
+        var array = diets.toString();
+        $(".chose-diet").html(array)
+        $("#di_et").modal('hide');
+      });
+
+
+      //**************Medical Conditions Modal***************// 
+      $(".medicalModal").on("click",function(event){
+        event.preventDefault();
+        var medicalIds = [];
+        var medicals = [];
+        $("input[type='checkbox']:checked").each(function(){
+          medicalIds.push($(this).attr('medical-id'));
+          medicals.push($(this).val());
+        });
+        var array = medicals.toString();
+        $(".chose-medical").html(array)
+        $("#medical_condition").modal('hide');
+      });
+
+      //**************Cuisine Type Modal***************// 
+      $(".cuisineModal").on("click",function(event){
+        event.preventDefault();
+        var cuisineIds = [];
+        var cuisines = [];
+        $("input[type='checkbox']:checked").each(function(){
+          cuisineIds.push($(this).attr('medical-id'));
+          cuisines.push($(this).val());
+        });
+        var array = cuisines.toString();
+        $(".chose-cuisine").html(array)
+        $("#cui_sine").modal('hide');
+      });
+
+  
+     
+
+//===============================Personal information Models===========================================// 
+
+  });
+</script>
